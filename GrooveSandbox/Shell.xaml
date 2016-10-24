@@ -1,0 +1,54 @@
+﻿<Page x:Class="GrooveSandbox.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:t10controls="using:Template10.Controls">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <t10controls:HamburgerMenu x:Name="Menu"
+                                   AccentColor="{ThemeResource SystemAccentColor}"
+                                   HamburgerBackground="{StaticResource GrooveGrayBrush}"
+                                   NavAreaBackground="{StaticResource GrooveGrayBrush}"
+                                   NavButtonCheckedForeground="{StaticResource GrooveLightGrayBrush}"
+                                   NavButtonCheckedIndicatorBrush="{StaticResource GrooveLightGrayBrush}">
+
+            <t10controls:HamburgerMenu.PrimaryButtons>
+
+                <t10controls:HamburgerButtonInfo>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <SymbolIcon Symbol="Find" Width="48" Height="48"/>
+                        <TextBlock Text="Search" Margin="12,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </t10controls:HamburgerButtonInfo>
+
+                <t10controls:HamburgerButtonInfo>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <SymbolIcon Symbol="Contact" Width="48" Height="48"/>
+                        <TextBlock Text="Artists" Margin="12,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </t10controls:HamburgerButtonInfo>
+
+            </t10controls:HamburgerMenu.PrimaryButtons>
+
+            <t10controls:HamburgerMenu.SecondaryButtons>
+
+                <t10controls:HamburgerButtonInfo>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                        <SymbolIcon Symbol="AddFriend" Width="48" Height="48"/>
+                        <TextBlock Text="Sign In" Margin="12,0,0,0" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </t10controls:HamburgerButtonInfo>
+
+            </t10controls:HamburgerMenu.SecondaryButtons>
+
+        </t10controls:HamburgerMenu>
+
+        <Grid Grid.Row="1" Height="64" Background="{StaticResource GrooveDarkGrayBrush}"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,19 @@
+﻿<t10common:BootStrapper x:Class="GrooveSandbox.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:t10common="using:Template10.Common"
+    RequestedTheme="Dark">
+
+    <Application.Resources>
+
+        <Color x:Key="GrooveDarkGray">#FF0E0D0D</Color>
+        <Color x:Key="GrooveGray">#FF171717</Color>
+        <Color x:Key="GrooveLightGray">#FF878380</Color>
+
+        <SolidColorBrush x:Name="GrooveDarkGrayBrush" Color="{StaticResource GrooveDarkGray}"/>
+        <SolidColorBrush x:Name="GrooveGrayBrush" Color="{StaticResource GrooveGray}"/>
+        <SolidColorBrush x:Name="GrooveLightGrayBrush" Color="{StaticResource GrooveLightGray}"/>
+
+    </Application.Resources>
+
+</t10common:BootStrapper>
