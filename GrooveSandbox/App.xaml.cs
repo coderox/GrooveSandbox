@@ -12,6 +12,7 @@ namespace GrooveSandbox
             this.InitializeComponent();
         }
 
+        // Initialize the shell
         public override Task OnInitializeAsync(IActivatedEventArgs args)
         {
             var nav = NavigationServiceFactory(BackButton.Attach, ExistingContent.Include);

@@ -17,6 +17,7 @@
                                    NavButtonCheckedForeground="{StaticResource GrooveLightGrayBrush}"
                                    NavButtonCheckedIndicatorBrush="{StaticResource GrooveLightGrayBrush}">
 
+            <!-- Primary Buttons -->
             <t10controls:HamburgerMenu.PrimaryButtons>
 
                 <t10controls:HamburgerButtonInfo>
@@ -35,6 +36,7 @@
 
             </t10controls:HamburgerMenu.PrimaryButtons>
 
+            <!-- Secondary Buttons -->
             <t10controls:HamburgerMenu.SecondaryButtons>
 
                 <t10controls:HamburgerButtonInfo>
